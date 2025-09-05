@@ -1,0 +1,352 @@
+2025-05-03 20:16:58 - Request received
+2025-05-03 20:16:58 - POST request with image received
+2025-05-03 20:16:58 - File: 1746296218_2555.jpg, Type: image/jpeg, Size: 18695
+2025-05-03 20:16:58 - File uploaded to: Uploads/1746296218_2555.jpg
+2025-05-03 20:16:58 - Sending request to API: https://04f1-34-83-57-67.ngrok-free.app/api/test
+2025-05-03 20:16:59 - API response code: 200
+2025-05-03 20:16:59 - API response: {"confidence":0.9411383271217346,"prediction":"healthy","probabilities":{"diseased":0.05886167660355568,"healthy":0.9411383271217346}}
+
+2025-05-03 20:18:31 - Request received
+2025-05-03 20:18:31 - POST request with image received
+2025-05-03 20:18:31 - File: 1746296311_2555.jpg, Type: image/jpeg, Size: 18695
+2025-05-03 20:18:31 - File uploaded to: Uploads/1746296311_2555.jpg
+2025-05-03 20:18:31 - Sending request to API: https://04f1-34-83-57-67.ngrok-free.app/api/test
+2025-05-03 20:18:32 - API response code: 200
+2025-05-03 20:18:32 - API response: {"confidence":0.9411383271217346,"prediction":"healthy","probabilities":{"diseased":0.05886167660355568,"healthy":0.9411383271217346}}
+
+2025-05-04 03:52:50 - Request received
+2025-05-04 03:52:50 - POST request with image received
+2025-05-04 03:52:50 - File: 1746323570_2556.jpg, Type: image/jpeg, Size: 15389
+2025-05-04 03:52:50 - File uploaded to: Uploads/1746323570_2556.jpg
+2025-05-04 03:52:50 - Sending request to API: https://e0c3-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 03:52:53 - API response code: 200
+2025-05-04 03:52:53 - API response: {"confidence":0.9180629253387451,"prediction":"healthy","probabilities":{"diseased":0.0819370374083519,"healthy":0.9180629253387451}}
+
+2025-05-04 04:00:29 - Request received
+2025-05-04 04:00:29 - POST request with image received
+2025-05-04 04:00:29 - File: 1746324029_2556.jpg, Type: image/jpeg, Size: 15389
+2025-05-04 04:00:29 - File uploaded to: Uploads/1746324029_2556.jpg
+2025-05-04 04:00:29 - Sending request to API: https://e0c3-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:00:30 - API response code: 200
+2025-05-04 04:00:30 - API response: {"confidence":0.9180629253387451,"prediction":"healthy","probabilities":{"diseased":0.0819370374083519,"healthy":0.9180629253387451}}
+
+2025-05-04 04:13:52 - Request received
+2025-05-04 04:13:52 - POST request with image received
+2025-05-04 04:13:52 - File: 1746324832_2537.jpg, Type: image/jpeg, Size: 15484
+2025-05-04 04:13:52 - File uploaded to: Uploads/1746324832_2537.jpg
+2025-05-04 04:13:52 - Sending request to API: https://c731-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:13:54 - API response code: 200
+2025-05-04 04:13:54 - API response: {"confidence":0.9998699426651001,"prediction":"healthy","probabilities":{"diseased":0.0001300178118981421,"healthy":0.9998699426651001}}
+
+2025-05-04 04:18:49 - Request received
+2025-05-04 04:18:49 - POST request with image received
+2025-05-04 04:18:49 - File: 1746325129_2536.jpg, Type: image/jpeg, Size: 14662
+2025-05-04 04:18:49 - File uploaded to: Uploads/1746325129_2536.jpg
+2025-05-04 04:18:49 - Sending request to API: https://c731-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:18:50 - API response code: 200
+2025-05-04 04:18:50 - API response: {"confidence":0.7921472191810608,"prediction":"healthy","probabilities":{"diseased":0.20785270631313324,"healthy":0.7921472191810608}}
+
+2025-05-04 04:18:50 - Exception: Access denied for user ''@'localhost' (using password: NO)
+2025-05-04 04:23:19 - PHP script started
+2025-05-04 04:23:19 - config.php included successfully
+2025-05-04 04:23:19 - Config variables verified: servername=localhost, api_url=https://e0c3-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:23:19 - POST request with image received
+2025-05-04 04:23:19 - File: 1746325399_2555.jpg, Type: image/jpeg, Size: 18695
+2025-05-04 04:23:19 - File uploaded to: Uploads/1746325399_2555.jpg
+2025-05-04 04:23:19 - Sending request to API: https://e0c3-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:23:20 - API response code: 404
+2025-05-04 04:23:20 - API response: <!DOCTYPE html>
+<html class="h-full" lang="en-US" dir="ltr">
+  <head>
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/euclid-square/EuclidSquare-Regular-WebS.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/euclid-square/EuclidSquare-RegularItalic-WebS.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.ngrok.com/static/fonts/euclid-square/EuclidSquare-Me
+2025-05-04 04:23:20 - API request failed. HTTP: 404, Error: 
+2025-05-04 04:34:51 - PHP script started
+2025-05-04 04:34:51 - config.php included successfully
+2025-05-04 04:34:51 - Config variables verified: servername=localhost, api_url=https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:34:51 - POST request with image received
+2025-05-04 04:34:51 - File: 1746326091_2536.jpg, Type: image/jpeg, Size: 14662
+2025-05-04 04:34:51 - File uploaded to: Uploads/1746326091_2536.jpg
+2025-05-04 04:34:51 - Sending request to API: https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:34:53 - API response code: 200
+2025-05-04 04:34:53 - API response: {"confidence":0.7921472191810608,"prediction":"healthy","probabilities":{"diseased":0.20785270631313324,"healthy":0.7921472191810608}}
+
+2025-05-04 04:34:53 - Prediction saved: healthy, Confidence: 0.79214721918106
+2025-05-04 04:35:09 - PHP script started
+2025-05-04 04:35:09 - config.php included successfully
+2025-05-04 04:35:09 - Config variables verified: servername=localhost, api_url=https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:35:09 - POST request with image received
+2025-05-04 04:35:09 - File: 1746326109_2540.jpg, Type: image/jpeg, Size: 22508
+2025-05-04 04:35:09 - File uploaded to: Uploads/1746326109_2540.jpg
+2025-05-04 04:35:09 - Sending request to API: https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:35:10 - API response code: 200
+2025-05-04 04:35:10 - API response: {"confidence":0.9534770250320435,"prediction":"healthy","probabilities":{"diseased":0.04652300849556923,"healthy":0.9534770250320435}}
+
+2025-05-04 04:35:10 - Prediction saved: healthy, Confidence: 0.95347702503204
+2025-05-04 04:35:26 - PHP script started
+2025-05-04 04:35:26 - config.php included successfully
+2025-05-04 04:35:26 - Config variables verified: servername=localhost, api_url=https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:35:26 - POST request with image received
+2025-05-04 04:35:26 - File: 1746326126_2222.jpg, Type: image/jpeg, Size: 20531
+2025-05-04 04:35:26 - File uploaded to: Uploads/1746326126_2222.jpg
+2025-05-04 04:35:26 - Sending request to API: https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:35:27 - API response code: 200
+2025-05-04 04:35:27 - API response: {"confidence":0.9831637740135193,"prediction":"healthy","probabilities":{"diseased":0.01683626137673855,"healthy":0.9831637740135193}}
+
+2025-05-04 04:35:28 - Prediction saved: healthy, Confidence: 0.98316377401352
+2025-05-04 04:35:48 - PHP script started
+2025-05-04 04:35:48 - config.php included successfully
+2025-05-04 04:35:48 - Config variables verified: servername=localhost, api_url=https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:35:48 - POST request with image received
+2025-05-04 04:35:48 - File: 1746326148_2887.jpg, Type: image/jpeg, Size: 24725
+2025-05-04 04:35:48 - File uploaded to: Uploads/1746326148_2887.jpg
+2025-05-04 04:35:48 - Sending request to API: https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:35:50 - API response code: 200
+2025-05-04 04:35:50 - API response: {"confidence":0.8622310757637024,"prediction":"healthy","probabilities":{"diseased":0.13776898384094238,"healthy":0.8622310757637024}}
+
+2025-05-04 04:35:50 - Prediction saved: healthy, Confidence: 0.8622310757637
+2025-05-04 04:36:15 - PHP script started
+2025-05-04 04:36:15 - config.php included successfully
+2025-05-04 04:36:15 - Config variables verified: servername=localhost, api_url=https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:36:15 - POST request with image received
+2025-05-04 04:36:15 - File: 1746326175_2502.jpg, Type: image/jpeg, Size: 14508
+2025-05-04 04:36:15 - File uploaded to: Uploads/1746326175_2502.jpg
+2025-05-04 04:36:15 - Sending request to API: https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:36:16 - API response code: 200
+2025-05-04 04:36:16 - API response: {"confidence":0.8478423953056335,"prediction":"healthy","probabilities":{"diseased":0.15215757489204407,"healthy":0.8478423953056335}}
+
+2025-05-04 04:36:16 - Prediction saved: healthy, Confidence: 0.84784239530563
+2025-05-04 04:36:49 - PHP script started
+2025-05-04 04:36:49 - config.php included successfully
+2025-05-04 04:36:49 - Config variables verified: servername=localhost, api_url=https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:36:49 - POST request with image received
+2025-05-04 04:36:49 - File: 1746326209_2487.jpg, Type: image/jpeg, Size: 15746
+2025-05-04 04:36:49 - File uploaded to: Uploads/1746326209_2487.jpg
+2025-05-04 04:36:49 - Sending request to API: https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:36:50 - API response code: 200
+2025-05-04 04:36:50 - API response: {"confidence":0.904603898525238,"prediction":"healthy","probabilities":{"diseased":0.09539607167243958,"healthy":0.904603898525238}}
+
+2025-05-04 04:36:50 - Prediction saved: healthy, Confidence: 0.90460389852524
+2025-05-04 04:50:29 - PHP script started
+2025-05-04 04:50:29 - config.php included successfully
+2025-05-04 04:50:29 - Config variables verified: servername=localhost, api_url=https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:50:29 - POST request with image received
+2025-05-04 04:50:29 - File: 1746327029_2485.jpg, Type: image/jpeg, Size: 15550
+2025-05-04 04:50:29 - File uploaded to: Uploads/1746327029_2485.jpg
+2025-05-04 04:50:29 - Sending request to API: https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:50:30 - API response code: 200
+2025-05-04 04:50:30 - API response: {"confidence":0.9344757795333862,"prediction":"healthy","probabilities":{"diseased":0.0655241459608078,"healthy":0.9344757795333862}}
+
+2025-05-04 04:50:30 - Prediction saved: healthy, Confidence: 0.93447577953339
+2025-05-04 04:50:38 - PHP script started
+2025-05-04 04:50:38 - config.php included successfully
+2025-05-04 04:50:38 - Config variables verified: servername=localhost, api_url=https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:50:38 - POST request with image received
+2025-05-04 04:50:38 - File: 1746327038_2485.jpg, Type: image/jpeg, Size: 15550
+2025-05-04 04:50:38 - File uploaded to: Uploads/1746327038_2485.jpg
+2025-05-04 04:50:38 - Sending request to API: https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:50:39 - API response code: 200
+2025-05-04 04:50:39 - API response: {"confidence":0.9344757795333862,"prediction":"healthy","probabilities":{"diseased":0.0655241459608078,"healthy":0.9344757795333862}}
+
+2025-05-04 04:50:39 - Prediction saved: healthy, Confidence: 0.93447577953339
+2025-05-04 04:58:55 - PHP script started
+2025-05-04 04:58:55 - config.php included successfully
+2025-05-04 04:58:55 - Config variables verified: servername=localhost, api_url=https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:58:55 - POST request with image received
+2025-05-04 04:58:55 - File: 1746327535_2486.jpg, Type: image/jpeg, Size: 12277
+2025-05-04 04:58:55 - File uploaded to: Uploads/1746327535_2486.jpg
+2025-05-04 04:58:55 - Sending request to API: https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:58:56 - API response code: 200
+2025-05-04 04:58:56 - API response: {"confidence":0.9817458391189575,"prediction":"healthy","probabilities":{"diseased":0.01825418509542942,"healthy":0.9817458391189575}}
+
+2025-05-04 04:58:56 - Prediction saved: healthy, Confidence: 0.98174583911896
+2025-05-04 04:59:03 - PHP script started
+2025-05-04 04:59:03 - config.php included successfully
+2025-05-04 04:59:03 - Config variables verified: servername=localhost, api_url=https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:59:03 - POST request with image received
+2025-05-04 04:59:03 - File: 1746327543_2486.jpg, Type: image/jpeg, Size: 12277
+2025-05-04 04:59:03 - File uploaded to: Uploads/1746327543_2486.jpg
+2025-05-04 04:59:03 - Sending request to API: https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:59:04 - API response code: 0
+2025-05-04 04:59:04 - API response: 
+2025-05-04 04:59:04 - API request failed. HTTP: 0, Error: 
+2025-05-04 04:59:30 - PHP script started
+2025-05-04 04:59:30 - config.php included successfully
+2025-05-04 04:59:30 - Config variables verified: servername=localhost, api_url=https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:59:30 - POST request with image received
+2025-05-04 04:59:30 - File: 1746327570_2487.jpg, Type: image/jpeg, Size: 15746
+2025-05-04 04:59:30 - File uploaded to: Uploads/1746327570_2487.jpg
+2025-05-04 04:59:30 - Sending request to API: https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 04:59:31 - API response code: 200
+2025-05-04 04:59:31 - API response: {"confidence":0.904603898525238,"prediction":"healthy","probabilities":{"diseased":0.09539607167243958,"healthy":0.904603898525238}}
+
+2025-05-04 04:59:31 - Prediction saved: healthy, Confidence: 0.90460389852524
+2025-05-04 05:07:24 - PHP script started
+2025-05-04 05:07:24 - config.php included successfully
+2025-05-04 05:07:24 - Config variables verified: servername=localhost, api_url=https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:07:24 - POST request with image received
+2025-05-04 05:07:24 - File: 1746328044_2486.jpg, Type: image/jpeg, Size: 12277
+2025-05-04 05:07:24 - File uploaded to: Uploads/1746328044_2486.jpg
+2025-05-04 05:07:24 - Sending request to API: https://d588-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:07:26 - API response code: 200
+2025-05-04 05:07:26 - API response: {"confidence":0.9817458391189575,"prediction":"healthy","probabilities":{"diseased":0.01825418509542942,"healthy":0.9817458391189575}}
+
+2025-05-04 05:07:26 - Prediction saved: healthy, Confidence: 0.98174583911896
+2025-05-04 05:25:07 - PHP script started
+2025-05-04 05:25:07 - config.php included successfully
+2025-05-04 05:25:07 - Config variables verified: servername=localhost, api_url=https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:25:07 - POST request with image received
+2025-05-04 05:25:07 - File: 1746329107_2486.jpg, Type: image/jpeg, Size: 12277
+2025-05-04 05:25:07 - File uploaded to: Uploads/1746329107_2486.jpg
+2025-05-04 05:25:07 - Sending request to API: https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:25:08 - API response code: 200
+2025-05-04 05:25:08 - API response: {"confidence":0.9817458391189575,"prediction":"healthy","probabilities":{"diseased":0.01825418509542942,"healthy":0.9817458391189575}}
+
+2025-05-04 05:25:08 - Prediction saved: healthy, Confidence: 0.98174583911896
+2025-05-04 05:25:45 - PHP script started
+2025-05-04 05:25:45 - config.php included successfully
+2025-05-04 05:25:45 - Config variables verified: servername=localhost, api_url=https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:25:45 - POST request with image received
+2025-05-04 05:25:45 - File: 1746329145_2488.jpg, Type: image/jpeg, Size: 19490
+2025-05-04 05:25:45 - File uploaded to: Uploads/1746329145_2488.jpg
+2025-05-04 05:25:45 - Sending request to API: https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:25:46 - API response code: 200
+2025-05-04 05:25:46 - API response: {"confidence":0.8495562076568604,"prediction":"healthy","probabilities":{"diseased":0.15044380724430084,"healthy":0.8495562076568604}}
+
+2025-05-04 05:25:46 - Prediction saved: healthy, Confidence: 0.84955620765686
+2025-05-04 05:26:26 - PHP script started
+2025-05-04 05:26:26 - config.php included successfully
+2025-05-04 05:26:26 - Config variables verified: servername=localhost, api_url=https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:26:26 - POST request with image received
+2025-05-04 05:26:26 - File: 1746329186_2451.jpg, Type: image/jpeg, Size: 11106
+2025-05-04 05:26:26 - File uploaded to: Uploads/1746329186_2451.jpg
+2025-05-04 05:26:26 - Sending request to API: https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:26:27 - API response code: 200
+2025-05-04 05:26:27 - API response: {"confidence":0.9755664467811584,"prediction":"healthy","probabilities":{"diseased":0.02443355694413185,"healthy":0.9755664467811584}}
+
+2025-05-04 05:26:27 - Prediction saved: healthy, Confidence: 0.97556644678116
+2025-05-04 05:30:03 - PHP script started
+2025-05-04 05:30:03 - config.php included successfully
+2025-05-04 05:30:03 - Config variables verified: servername=localhost, api_url=https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:30:03 - POST request with image received
+2025-05-04 05:30:03 - File: 1746329403_2486.jpg, Type: image/jpeg, Size: 12277
+2025-05-04 05:30:03 - File uploaded to: Uploads/1746329403_2486.jpg
+2025-05-04 05:30:03 - Sending request to API: https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:30:04 - API response code: 200
+2025-05-04 05:30:04 - API response: {"confidence":0.9817458391189575,"prediction":"healthy","probabilities":{"diseased":0.01825418509542942,"healthy":0.9817458391189575}}
+
+2025-05-04 05:30:04 - Prediction saved: healthy, Confidence: 0.98174583911896
+2025-05-04 05:30:18 - PHP script started
+2025-05-04 05:30:18 - config.php included successfully
+2025-05-04 05:30:18 - Config variables verified: servername=localhost, api_url=https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:30:18 - POST request with image received
+2025-05-04 05:30:18 - File: 1746329418_2486.jpg, Type: image/jpeg, Size: 12277
+2025-05-04 05:30:18 - File uploaded to: Uploads/1746329418_2486.jpg
+2025-05-04 05:30:18 - Sending request to API: https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:30:19 - API response code: 200
+2025-05-04 05:30:19 - API response: {"confidence":0.9817458391189575,"prediction":"healthy","probabilities":{"diseased":0.01825418509542942,"healthy":0.9817458391189575}}
+
+2025-05-04 05:30:19 - Prediction saved: healthy, Confidence: 0.98174583911896
+2025-05-04 05:30:31 - PHP script started
+2025-05-04 05:30:31 - config.php included successfully
+2025-05-04 05:30:31 - Config variables verified: servername=localhost, api_url=https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:30:31 - POST request with image received
+2025-05-04 05:30:31 - File: 1746329431_2485.jpg, Type: image/jpeg, Size: 15550
+2025-05-04 05:30:31 - File uploaded to: Uploads/1746329431_2485.jpg
+2025-05-04 05:30:31 - Sending request to API: https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:30:32 - API response code: 200
+2025-05-04 05:30:32 - API response: {"confidence":0.9344757795333862,"prediction":"healthy","probabilities":{"diseased":0.0655241459608078,"healthy":0.9344757795333862}}
+
+2025-05-04 05:30:32 - Prediction saved: healthy, Confidence: 0.93447577953339
+2025-05-04 05:32:22 - Flask API Response (HTTP 0): 
+2025-05-04 05:34:09 - Flask API Response (HTTP 0): 
+2025-05-04 05:35:10 - PHP script started
+2025-05-04 05:35:10 - config.php included successfully
+2025-05-04 05:35:10 - Config variables verified: servername=localhost, api_url=https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:35:10 - POST request with image received
+2025-05-04 05:35:10 - File: 1746329710_2487.jpg, Type: image/jpeg, Size: 15746
+2025-05-04 05:35:10 - File uploaded to: Uploads/1746329710_2487.jpg
+2025-05-04 05:35:10 - Sending request to API: https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:35:12 - API response code: 200
+2025-05-04 05:35:12 - API response: {"confidence":0.904603898525238,"prediction":"healthy","probabilities":{"diseased":0.09539607167243958,"healthy":0.904603898525238}}
+
+2025-05-04 05:35:12 - Prediction saved: healthy, Confidence: 0.90460389852524
+2025-05-04 05:41:33 - PHP script started
+2025-05-04 05:41:33 - POST request with image received
+2025-05-04 05:41:33 - File: 1746330093_2487.jpg, Type: image/jpeg, Size: 15746
+2025-05-04 05:41:33 - File uploaded to: Uploads/1746330093_2487.jpg
+2025-05-04 05:41:33 - Sending request to API: YOUR_FLASK_NGROK_URL/predict
+2025-05-04 05:41:34 - API response code: 0
+2025-05-04 05:41:34 - CURL error: Could not resolve host: YOUR_FLASK_NGROK_URL
+2025-05-04 05:41:34 - API response: 
+2025-05-04 05:41:34 - API request failed. HTTP: 0, Error: Could not resolve host: YOUR_FLASK_NGROK_URL
+2025-05-04 05:42:31 - PHP script started
+2025-05-04 05:42:31 - POST request with image received
+2025-05-04 05:42:31 - File: 1746330151_2487.jpg, Type: image/jpeg, Size: 15746
+2025-05-04 05:42:31 - File uploaded to: Uploads/1746330151_2487.jpg
+2025-05-04 05:42:31 - Sending request to API: https://1c16-35-233-228-140.ngrok-free.app/predict
+2025-05-04 05:42:32 - API response code: 404
+2025-05-04 05:42:32 - API response: <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2025-05-04 05:42:32 - API request failed. HTTP: 404, Error: 
+2025-05-04 05:43:37 - PHP script started
+2025-05-04 05:43:37 - POST request with image received
+2025-05-04 05:43:37 - File: 1746330217_2487.jpg, Type: image/jpeg, Size: 15746
+2025-05-04 05:43:37 - File uploaded to: Uploads/1746330217_2487.jpg
+2025-05-04 05:43:37 - Sending request to API: https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:43:38 - API response code: 400
+2025-05-04 05:43:38 - API response: {"error":"No image provided"}
+
+2025-05-04 05:43:38 - API request failed. HTTP: 400, Error: 
+2025-05-04 05:43:53 - PHP script started
+2025-05-04 05:43:53 - config.php included successfully
+2025-05-04 05:43:53 - Config variables verified: servername=localhost, api_url=https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:43:53 - POST request with image received
+2025-05-04 05:43:53 - File: 1746330233_2487.jpg, Type: image/jpeg, Size: 15746
+2025-05-04 05:43:53 - File uploaded to: Uploads/1746330233_2487.jpg
+2025-05-04 05:43:53 - Sending request to API: https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:43:54 - API response code: 200
+2025-05-04 05:43:54 - API response: {"confidence":0.904603898525238,"prediction":"healthy","probabilities":{"diseased":0.09539607167243958,"healthy":0.904603898525238}}
+
+2025-05-04 05:43:54 - Prediction saved: healthy, Confidence: 0.90460389852524
+2025-05-04 05:52:03 - PHP script started
+2025-05-04 05:52:03 - config.php included successfully
+2025-05-04 05:52:03 - Config variables verified: servername=localhost, api_url=https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:52:03 - POST request with image received
+2025-05-04 05:52:03 - File: 1746330723_2488.jpg, Type: image/jpeg, Size: 19490
+2025-05-04 05:52:03 - File uploaded to: Uploads/1746330723_2488.jpg
+2025-05-04 05:52:03 - Sending request to API: https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:52:04 - API response code: 200
+2025-05-04 05:52:04 - API response: {"confidence":0.8495562076568604,"prediction":"healthy","probabilities":{"diseased":0.15044380724430084,"healthy":0.8495562076568604}}
+
+2025-05-04 05:52:04 - Extracted prob_healthy: 0.84955620765686, prob_diseased: 0.1504438072443
+2025-05-04 05:52:04 - Prediction saved: healthy, Confidence: 0.84955620765686, Prob_healthy: 0.84955620765686, Prob_diseased: 0.1504438072443
+2025-05-04 05:52:37 - PHP script started
+2025-05-04 05:52:37 - config.php included successfully
+2025-05-04 05:52:37 - Config variables verified: servername=localhost, api_url=https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:52:37 - POST request with image received
+2025-05-04 05:52:37 - File: 1746330757_2487.jpg, Type: image/jpeg, Size: 15746
+2025-05-04 05:52:37 - File uploaded to: Uploads/1746330757_2487.jpg
+2025-05-04 05:52:37 - Sending request to API: https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:52:38 - API response code: 200
+2025-05-04 05:52:38 - API response: {"confidence":0.904603898525238,"prediction":"healthy","probabilities":{"diseased":0.09539607167243958,"healthy":0.904603898525238}}
+
+2025-05-04 05:52:38 - Extracted prob_healthy: 0.90460389852524, prob_diseased: 0.09539607167244
+2025-05-04 05:52:38 - Prediction saved: healthy, Confidence: 0.90460389852524, Prob_healthy: 0.90460389852524, Prob_diseased: 0.09539607167244
+2025-05-04 05:53:06 - PHP script started
+2025-05-04 05:53:06 - config.php included successfully
+2025-05-04 05:53:06 - Config variables verified: servername=localhost, api_url=https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:53:06 - POST request with image received
+2025-05-04 05:53:06 - File: 1746330786_953.jpg, Type: image/jpeg, Size: 20203
+2025-05-04 05:53:06 - File uploaded to: Uploads/1746330786_953.jpg
+2025-05-04 05:53:06 - Sending request to API: https://1c16-35-233-228-140.ngrok-free.app/api/test
+2025-05-04 05:53:08 - API response code: 200
+2025-05-04 05:53:08 - API response: {"confidence":0.9328663945198059,"prediction":"healthy","probabilities":{"diseased":0.06713362038135529,"healthy":0.9328663945198059}}
+
+2025-05-04 05:53:08 - Extracted prob_healthy: 0.93286639451981, prob_diseased: 0.067133620381355
+2025-05-04 05:53:08 - Prediction saved: healthy, Confidence: 0.93286639451981, Prob_healthy: 0.93286639451981, Prob_diseased: 0.067133620381355

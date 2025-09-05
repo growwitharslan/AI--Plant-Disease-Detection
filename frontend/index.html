@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantCare AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@0.11.0/dist/js-confetti.browser.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: #1B263B;
+            color: #F5F6F5;
+            overflow-x: hidden;
+        }
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .glow-button {
+            box-shadow: 0 0 20px #39FF14;
+            transition: box-shadow 0.3s ease;
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 30px #39FF14, 0 0 50px #39FF14;
+        }
+        .result-card {
+            animation: glowIn 0.5s ease-out;
+        }
+        .image-preview img {
+            max-height: 200px;
+            object-fit: contain;
+        }
+        @keyframes glowIn {
+            from { opacity: 0; transform: scale(0.8); box-shadow: 0 0 0 #39FF14; }
+            to { opacity: 1; transform: scale(1); box-shadow: 0 0 20px #0c7c51; }
+        }
+        @media (max-width: 640px) {
+            .hero {
+                padding-top: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js" class="absolute inset-0"></div>
+    <header class="fixed top-0 w-full bg-[#2E1A47] bg-opacity-90 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="assets/plant-icon.svg" alt="Plant Icon" class="w-12 h-12" onerror="this.src='https://via.placeholder.com/48?text=Plant'">
+                <h1 class="text-3xl font-bold font-orbitron text-[#39FF14]">PlantCare AI</h1>
+            </div>
+            <nav class="space-x-4">
+                <a href="index.html" class="px-4 py-2 rounded-full bg-[#39FF14] text-[#2E1A47] font-semibold hover:bg-[#F5F6F5] font-orbitron" aria-current="page">Home</a>
+                <a href="dashboard.html" class="px-4 py-2 rounded-full hover:bg-[#39FF14] hover:text-[#2E1A47] font-semibold font-orbitron">Dashboard</a>
+            </nav>
+        </div>
+    </header>
+    <main class="relative">
+        <section class="hero">
+            <div class="text-center">
+                <h2 class="text-5xl font-bold font-orbitron text-[#39FF14] mb-6 animate-pulse">Revolutionize Plant Health</h2>
+                <p class="text-xl text-[#F5F6F5] max-w-2xl mx-auto mb-8">Harness AI to diagnose plant diseases in seconds with unparalleled precision.</p>
+                <div class="glass-card rounded-3xl p-8 max-w-md mx-auto">
+                    <form id="uploadForm" enctype="multipart/form-data" aria-label="Plant image upload form">
+                        <div class="drop-zone bg-[#2E1A47] bg-opacity-50 border-2 border-[#39FF14] rounded-2xl p-6 text-center cursor-pointer hover:scale-105 transition-transform" id="dropZone" aria-label="Drag and drop plant image here">
+                            <svg class="w-16 h-16 mx-auto text-[#39FF14] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V8m0 0l-4 4m4-4l4 4m6-4v8m-5 4h10m-5-4v-8"></path></svg>
+                            <p class="text-[#F5F6F5] font-semibold">Drop Plant Image or Click</p>
+                            <input type="file" name="image" id="image" accept="image/jpeg,image/png" required aria-label="Upload plant image" class="hidden">
+                        </div>
+                        <div id="imagePreview" class="image-preview mt-4 flex justify-center overflow-auto"></div>
+                        <div class="progress-bar mt-4 h-2 bg-[#2E1A47] rounded-full overflow-hidden hidden" id="progressBar">
+                            <div class="progress h-full bg-[#39FF14] transition-all duration-300" id="progress"></div>
+                        </div>
+                        <button type="submit" id="analyzeBtn" class="mt-6 w-full bg-[#39FF14] text-[#2E1A47] py-3 rounded-2xl font-bold font-orbitron glow-button" aria-label="Analyze image">
+                            <svg class="w-6 h-6 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            Scan Now
+                        </button>
+                    </form>
+                    <div id="resultCard" class="result-card glass-card rounded-3xl p-6 mt-6 hidden">
+                        <h3 class="text-2xl font-bold font-orbitron text-[#39FF14] mb-4">Scan Result</h3>
+                        <div id="resultMessage" class="text-[#F5F6F5]">
+                            <p id="diagnosis" class="font-semibold"></p>
+                            <p id="confidence" class="font-semibold"></p>
+                            <p id="probHealthy" class="font-semibold"></p>
+                            <p id="probDiseased" class="font-semibold"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card rounded-2xl p-6 text-center hover:scale-105 transition-transform">
+                <svg class="w-12 h-12 mx-auto mb-4 text-[#39FF14]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                <h3 class="text-3xl font-bold font-orbitron text-[#39FF14]">2000+</h3>
+                <p class="text-[#F5F6F5]">Scans Performed</p>
+            </div>
+            <div class="glass-card rounded-2xl p-6 text-center hover:scale-105 transition-transform">
+                <svg class="w-12 h-12 mx-auto mb-4 text-[#39FF14]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <h3 class="text-3xl font-bold font-orbitron text-[#39FF14]">Instant</h3>
+                <p class="text-[#F5F6F5]">Real-Time Results</p>
+            </div>
+            <div class="glass-card rounded-2xl p-6 text-center hover:scale-105 transition-transform">
+                <svg class="w-12 h-12 mx-auto mb-4 text-[#39FF14]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <h3 class="text-3xl font-bold font-orbitron text-[#39FF14]">94%</h3>
+                <p class="text-[#F5F6F5]">Accuracy</p>
+            </div>
+        </section>
+    </main>
+    <div id="loading" class="loading fixed inset-0 bg-[#1B263B] bg-opacity-80 flex items-center justify-center hidden" aria-hidden="true">
+        <div class="spinner border-4 border-t-[#39FF14] rounded-full w-12 h-12 animate-spin"></div>
+        <p class="text-[#39FF14] ml-4 font-orbitron">Scanning...</p>
+    </div>
+    <footer class="bg-[#2E1A47] text-[#F5F6F5] py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-orbitron">© 2025 PlantCare AI. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" aria-label="Twitter" class="hover:text-[#39FF14]"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497-3.753C20.18 7.773 21.692 5.25 22 4.01z"></path></svg></a>
+                <a href="#" aria-label="GitHub" class="hover:text-[#39FF14]"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.698-2.782.604-3.369-1.34-3.369-1.34-.454-1.157-1.11-1.464-1.11-1.464-.906-.619.069-.606.069-.606 1.002.071 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.647.349-1.087.636-1.338-2.22-.253-4.555-1.111-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.268.098-2.639 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.371.203 2.386.1 2.639.64.698 1.026 1.591 1.026 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.577.688.479C19.137 20.164 22 16.42 22 12c0-5.523-4.477-10-10-10z"></path></svg></a>
+                <a href="#" aria-label="LinkedIn" class="hover:text-[#39FF14]"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#39FF14' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: '#39FF14', opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true },
+                modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8 }, repulse: { distance: 100 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } }
+            },
+            retina_detect: true
+        });
+        gsap.from('.hero h2', { duration: 1, y: -50, opacity: 0, ease: 'power2.out' });
+        gsap.from('.glass-card', { duration: 1, scale: 0.8, opacity: 0, delay: 0.5, ease: 'back.out(1.7)' });
+    </script>
+    <script src="js/app.js"></script>
+</body>
+</html>

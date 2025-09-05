@@ -1,0 +1,4 @@
+[04-May-2025 04:18:50 Europe/Berlin] PHP Warning:  Undefined variable $servername in C:\xampp\htdocs\Plant_Disease_Detection\backend\analyze.php on line 105
+[04-May-2025 04:18:50 Europe/Berlin] PHP Warning:  Undefined variable $username in C:\xampp\htdocs\Plant_Disease_Detection\backend\analyze.php on line 105
+[04-May-2025 04:18:50 Europe/Berlin] PHP Warning:  Undefined variable $password in C:\xampp\htdocs\Plant_Disease_Detection\backend\analyze.php on line 105
+[04-May-2025 04:18:50 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\Plant_Disease_Detection\backend\analyze.php on line 105

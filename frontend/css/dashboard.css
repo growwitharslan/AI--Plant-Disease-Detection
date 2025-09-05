@@ -1,0 +1,209 @@
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    color: #264653;
+}
+
+.header {
+    background: linear-gradient(90deg, #2A9D8F, #F4A261);
+    color: #fff;
+    padding: 1.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .icon {
+    width: 60px;
+    height: 60px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav .nav-link:hover, nav .nav-link.active {
+    color: #E9C46A;
+    transform: scale(1.1);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 7rem auto 2rem;
+    padding: 0 1rem;
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    color: #2A9D8F;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.controls input, .controls select {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    min-width: 150px;
+}
+
+.controls button {
+    padding: 0.75rem 1.5rem;
+    background: #F4A261;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.controls button:hover {
+    background: #E76F51;
+    transform: translateY(-2px);
+}
+
+.charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.chart-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #2A9D8F;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+th i {
+    margin-left: 0.5rem;
+}
+
+th:hover {
+    background: #21867A;
+}
+
+tr:hover {
+    background: #f9f9f9;
+}
+
+.footer {
+    background: #264653;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #E9C46A;
+    transform: scale(1.2);
+}
+
+.back-to-top {
+    color: #F4A261;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.back-to-top:hover {
+    color: #E9C46A;
+}
+
+@media (max-width: 768px) {
+    .charts {
+        grid-template-columns: 1fr;
+    }
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .controls input, .controls select {
+        width: 100%;
+    }
+    table {
+        font-size: 0.9rem;
+    }
+    th, td {
+        padding: 0.75rem;
+    }
+} */
